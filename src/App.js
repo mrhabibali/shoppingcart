@@ -19,7 +19,7 @@ class App extends Component {
         <Navbar
           totalCounters={this.state.counters.filter((c) => c.value > 0).length}
         />
-        <main className="cntainer">
+        <main className="testcontainer">
           <Counters
             counters={this.state.counters}
             onReset={this.handleReset}
@@ -40,9 +40,8 @@ class App extends Component {
   };
 
   handleIncrement = (counter) => {
-    const counters = [...this.state.counters];
+    const counters = this.state.counters;
     const index = counters.indexOf(counter);
-    counters[index] = { ...counter };
     counters[index].value++;
     this.setState({ counters });
   };

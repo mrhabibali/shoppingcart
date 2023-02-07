@@ -19,7 +19,6 @@ class Counters extends Component {
             counter={counter}
           />
         ))}
-        ;
       </div>
     );
   }

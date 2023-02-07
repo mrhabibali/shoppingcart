@@ -46,5 +46,3 @@ class Counter extends Component {
 }
 
 export default Counter;
-
-//<span className={this.getBadgename()}>{this.formatCount()}</span>
